@@ -1,0 +1,329 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		42509AF41A59067600C736D3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 42509AF31A59067600C736D3 /* AppDelegate.m */; };
+		42509AF61A59067600C736D3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 42509AF51A59067600C736D3 /* main.m */; };
+		42509AF91A59067600C736D3 /* GameScene.mm in Sources */ = {isa = PBXBuildFile; fileRef = 42509AF81A59067600C736D3 /* GameScene.mm */; };
+		42509AFB1A59067600C736D3 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 42509AFA1A59067600C736D3 /* GameScene.sks */; };
+		42509AFD1A59067600C736D3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42509AFC1A59067600C736D3 /* Images.xcassets */; };
+		42509B001A59067600C736D3 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42509AFE1A59067600C736D3 /* MainMenu.xib */; };
+		42509B171A5906EE00C736D3 /* AI.mm in Sources */ = {isa = PBXBuildFile; fileRef = 42509B151A5906EE00C736D3 /* AI.mm */; };
+		42509B191A59076300C736D3 /* libstdc++.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 42509B181A59076300C736D3 /* libstdc++.6.dylib */; };
+		42509B1B1A5907A900C736D3 /* libc++.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 42509B1A1A5907A900C736D3 /* libc++.1.dylib */; };
+		42509B201A5907B000C736D3 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 42509B1C1A5907B000C736D3 /* libc++.dylib */; };
+		42509B211A5907B000C736D3 /* libc++abi.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 42509B1D1A5907B000C736D3 /* libc++abi.dylib */; };
+		42509B221A5907B000C736D3 /* libstdc++.6.0.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 42509B1E1A5907B000C736D3 /* libstdc++.6.0.9.dylib */; };
+		42509B231A5907B000C736D3 /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 42509B1F1A5907B000C736D3 /* libstdc++.dylib */; };
+		42509B281A590BAF00C736D3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42509B271A590BAF00C736D3 /* Foundation.framework */; };
+		42509B301A591F0900C736D3 /* database.txt in Resources */ = {isa = PBXBuildFile; fileRef = 42509B2F1A591F0900C736D3 /* database.txt */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		42509AED1A59067600C736D3 /* Gomoku.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gomoku.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		42509AF21A59067600C736D3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		42509AF31A59067600C736D3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		42509AF51A59067600C736D3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		42509AF71A59067600C736D3 /* GameScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameScene.h; sourceTree = "<group>"; };
+		42509AF81A59067600C736D3 /* GameScene.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = GameScene.mm; sourceTree = "<group>"; };
+		42509AFA1A59067600C736D3 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		42509AFC1A59067600C736D3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		42509AFF1A59067600C736D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		42509B151A5906EE00C736D3 /* AI.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AI.mm; sourceTree = "<group>"; };
+		42509B181A59076300C736D3 /* libstdc++.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.6.dylib"; path = "usr/lib/libstdc++.6.dylib"; sourceTree = SDKROOT; };
+		42509B1A1A5907A900C736D3 /* libc++.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.1.dylib"; path = "usr/lib/libc++.1.dylib"; sourceTree = SDKROOT; };
+		42509B1C1A5907B000C736D3 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+		42509B1D1A5907B000C736D3 /* libc++abi.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++abi.dylib"; path = "usr/lib/libc++abi.dylib"; sourceTree = SDKROOT; };
+		42509B1E1A5907B000C736D3 /* libstdc++.6.0.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.6.0.9.dylib"; path = "usr/lib/libstdc++.6.0.9.dylib"; sourceTree = SDKROOT; };
+		42509B1F1A5907B000C736D3 /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
+		42509B271A590BAF00C736D3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		42509B2D1A59102300C736D3 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		42509B2F1A591F0900C736D3 /* database.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = database.txt; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		42509AEA1A59067600C736D3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42509B281A590BAF00C736D3 /* Foundation.framework in Frameworks */,
+				42509B201A5907B000C736D3 /* libc++.dylib in Frameworks */,
+				42509B211A5907B000C736D3 /* libc++abi.dylib in Frameworks */,
+				42509B221A5907B000C736D3 /* libstdc++.6.0.9.dylib in Frameworks */,
+				42509B231A5907B000C736D3 /* libstdc++.dylib in Frameworks */,
+				42509B1B1A5907A900C736D3 /* libc++.1.dylib in Frameworks */,
+				42509B191A59076300C736D3 /* libstdc++.6.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		42509AE41A59067600C736D3 = {
+			isa = PBXGroup;
+			children = (
+				42509B271A590BAF00C736D3 /* Foundation.framework */,
+				42509B1C1A5907B000C736D3 /* libc++.dylib */,
+				42509B1D1A5907B000C736D3 /* libc++abi.dylib */,
+				42509B1E1A5907B000C736D3 /* libstdc++.6.0.9.dylib */,
+				42509B1F1A5907B000C736D3 /* libstdc++.dylib */,
+				42509B1A1A5907A900C736D3 /* libc++.1.dylib */,
+				42509B181A59076300C736D3 /* libstdc++.6.dylib */,
+				42509AEF1A59067600C736D3 /* Gomoku */,
+				42509AEE1A59067600C736D3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		42509AEE1A59067600C736D3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				42509AED1A59067600C736D3 /* Gomoku.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		42509AEF1A59067600C736D3 /* Gomoku */ = {
+			isa = PBXGroup;
+			children = (
+				42509B2F1A591F0900C736D3 /* database.txt */,
+				42509AF21A59067600C736D3 /* AppDelegate.h */,
+				42509AF31A59067600C736D3 /* AppDelegate.m */,
+				42509B151A5906EE00C736D3 /* AI.mm */,
+				42509AF71A59067600C736D3 /* GameScene.h */,
+				42509AF81A59067600C736D3 /* GameScene.mm */,
+				42509AFA1A59067600C736D3 /* GameScene.sks */,
+				42509AFC1A59067600C736D3 /* Images.xcassets */,
+				42509AFE1A59067600C736D3 /* MainMenu.xib */,
+				42509AF01A59067600C736D3 /* Supporting Files */,
+			);
+			path = Gomoku;
+			sourceTree = "<group>";
+		};
+		42509AF01A59067600C736D3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				42509B2D1A59102300C736D3 /* Info.plist */,
+				42509AF51A59067600C736D3 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		42509AEC1A59067600C736D3 /* Gomoku */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 42509B0F1A59067600C736D3 /* Build configuration list for PBXNativeTarget "Gomoku" */;
+			buildPhases = (
+				42509AE91A59067600C736D3 /* Sources */,
+				42509AEA1A59067600C736D3 /* Frameworks */,
+				42509AEB1A59067600C736D3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Gomoku;
+			productName = Gomoku;
+			productReference = 42509AED1A59067600C736D3 /* Gomoku.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		42509AE51A59067600C736D3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = Joshua;
+				TargetAttributes = {
+					42509AEC1A59067600C736D3 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+				};
+			};
+			buildConfigurationList = 42509AE81A59067600C736D3 /* Build configuration list for PBXProject "Gomoku" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 42509AE41A59067600C736D3;
+			productRefGroup = 42509AEE1A59067600C736D3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				42509AEC1A59067600C736D3 /* Gomoku */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		42509AEB1A59067600C736D3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42509AFB1A59067600C736D3 /* GameScene.sks in Resources */,
+				42509AFD1A59067600C736D3 /* Images.xcassets in Resources */,
+				42509B001A59067600C736D3 /* MainMenu.xib in Resources */,
+				42509B301A591F0900C736D3 /* database.txt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		42509AE91A59067600C736D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42509AF61A59067600C736D3 /* main.m in Sources */,
+				42509B171A5906EE00C736D3 /* AI.mm in Sources */,
+				42509AF91A59067600C736D3 /* GameScene.mm in Sources */,
+				42509AF41A59067600C736D3 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		42509AFE1A59067600C736D3 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				42509AFF1A59067600C736D3 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		42509B0D1A59067600C736D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		42509B0E1A59067600C736D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		42509B101A59067600C736D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Gomoku/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		42509B111A59067600C736D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Gomoku/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		42509AE81A59067600C736D3 /* Build configuration list for PBXProject "Gomoku" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42509B0D1A59067600C736D3 /* Debug */,
+				42509B0E1A59067600C736D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		42509B0F1A59067600C736D3 /* Build configuration list for PBXNativeTarget "Gomoku" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42509B101A59067600C736D3 /* Debug */,
+				42509B111A59067600C736D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 42509AE51A59067600C736D3 /* Project object */;
+}
