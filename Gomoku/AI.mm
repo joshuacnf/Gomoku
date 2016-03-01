@@ -209,40 +209,44 @@ struct Gomoku{
     
     double remove_(){
         S.pop();
-        val=S.top();
+        val = S.top();
         return val;
     }
     
-    double alpha_beta(int depth,double alpha,double beta){
-        if(depth==MAX_DEPTH) return evaluate();
-        if(abs_(val)>500000000.0) return val;
+    double alpha_beta(int depth, double alpha, double beta){
+        if(depth == MAX_DEPTH) return evaluate();
+        if(abs_(val) > 500000000.0)
+            return val;
         
-        for(int i=0;i<sq_size;i++){
-            int x=sq[i].x,y=sq[i].y;
-            if(opt.A[x][y]&&(!chessboard[x][y]))
+        double v = depth & 1? -INF: INF;
+        for (int i = 0; i < sq_size; i++)
+        {
+            int x = sq[i].x, y = sq[i].y;
+            if (opt.A[x][y] && (!chessboard[x][y]))
             {
-                //printf("%d %d\n",x,y);
-                if(depth&1){ //if depth is odd, player(max_) turn
-                    set_black(x,y,depth);
-                    change_(x,y,1);
-                    double temp=alpha;
-                    alpha=max_(alpha,alpha_beta(depth+1,alpha,beta));
-                    if(depth==1&&alpha>temp)
-                        NextX=x,NextY=y;
+                if (depth & 1)
+                {
+                    set_black(x, y, depth);
+                    change_(x, y, 1);
+                    double temp = alpha;
+                    v = max_(v, alpha_beta(depth + 1, alpha, beta));
+                    alpha = max_(alpha, v);
+                    if(depth == 1 && v > temp)
+                        NextX = x, NextY = y;
                 }
-                else{
-                    set_white(x,y,depth);
-                    change_(x,y,-1);
-                    beta=min_(beta,alpha_beta(depth+1,alpha,beta));
+                else
+                {
+                    set_white(x, y, depth);
+                    change_(x, y, -1);
+                    v = min_(v, alpha_beta(depth + 1, alpha, beta));
+                    beta = min_(beta, v);
                 }
                 remove_();
-                set_blank(x,y,depth);
-                if(alpha>=beta) goto out;
+                set_blank(x, y, depth);
+                if(alpha >= beta) return v;
             }
         }
-        out:
-        if(depth&1) return alpha;
-        else return beta;
+        return v;
     }
     
     inline double evaluate(){
